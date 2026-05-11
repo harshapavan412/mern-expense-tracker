@@ -13,7 +13,7 @@ function App() {
 
   const fetchExpenses = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/expenses", {
+      const res = await fetch("https://mern-expense-tracker-yij2.onrender.com/api/expenses", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

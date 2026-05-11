@@ -10,7 +10,7 @@ function ExpenseForm({ fetchExpenses }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch("http://localhost:5000/api/expenses", {
+    await fetch("https://mern-expense-tracker-yij2.onrender.com/api/expenses", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

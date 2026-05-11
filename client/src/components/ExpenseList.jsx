@@ -3,7 +3,7 @@ function ExpenseList({ expenses, fetchExpenses }) {
   const token = localStorage.getItem("token");
 
   const deleteExpense = async (id) => {
-    await fetch(`http://localhost:5000/api/expenses/${id}`, {
+    await fetch(`https://mern-expense-tracker-yij2.onrender.com/api/expenses/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
