@@ -44,8 +44,4 @@ jobs:
 
             sudo docker build -t expense-backend .
 
-            sudo docker run -d \
-              --name expense-container \
-              -p 5000:5000 \
-              -e MONGO_URI="${{ secrets.MONGO_URI }}" \
-              expense-backend
+            sudo docker run -d --name expense-container -p 5000:5000 -e MONGO_URI="${{ secrets.MONGO_URI }}" expense-backend
